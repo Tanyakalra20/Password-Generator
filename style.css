@@ -1,0 +1,133 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: whitesmoke;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main Wrapper */
+  .wrapper {
+    background: darkblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  /* Password Display */
+  .display-container {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .display {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background: #44475a;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .copy-btn img {
+    width: 22px;
+  }
+  
+  .copy-btn span {
+    display: none;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background: #50fa7b;
+    color: #282a36;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  /* Show copy message */
+  .copy-btn span.active {
+    display: block;
+  }
+  
+  /* Password Length */
+  .Length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Slider */
+  .slider {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Checkboxes */
+  .check {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .check input {
+    margin-right: 10px;
+  }
+  
+  /* Strength Indicator */
+  .strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  [data-indicator] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+  }
+  
+  /* Generate Button */
+  .generateButton {
+    width: 100%;
+    padding: 10px;
+    background: whitesmoke;
+    border: none;
+    color: #282a36;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .generateButton:hover {
+    background: #40c463;
+  }
+  
